@@ -3,47 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Friiskers - Streamer & Cat Dad</title>
+  <title>Friiskers | Streamer & Cat Dad</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #f0f0f0;
+      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+      color: #e0e0e0;
+      line-height: 1.6;
     }
+
     header {
-      background-color: #9146FF;
-      color: white;
-      padding: 2rem;
+      background: linear-gradient(to right, #9146FF, #3b1e70);
+      padding: 4rem 2rem;
       text-align: center;
+      color: #fff;
+      box-shadow: 0 0 15px #9146FF66;
     }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #e0e0e0bb;
+    }
+
     nav {
-      background-color: #1f1f1f;
+      background: #1f1f1f;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
       padding: 1rem;
-      text-align: center;
+      border-bottom: 2px solid #9146FF33;
     }
+
     nav a {
-      margin: 0 15px;
-      text-decoration: none;
       color: #9146FF;
+      text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
     }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
     main {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      padding: 2rem;
+      padding: 3rem 2rem;
     }
+
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
+      padding: 2rem;
+      background: #1b1b1b;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00000033;
+      transition: transform 0.3s;
     }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #1f1f1f;
-      color: #aaa;
+
+    section:hover {
+      transform: translateY(-5px);
     }
+
+    h2 {
+      color: #9146FF;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+    }
+
     a {
       color: #00BFFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #111;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
     }
   </style>
 </head>
@@ -51,13 +118,13 @@
 
   <header>
     <h1>Friiskers</h1>
-    <p>Streamer | Cat Dad | Gamer | Realist</p>
+    <p>Live. Real. Loud. Powered by caffeine, Miv, and memes.</p>
   </header>
 
   <nav>
     <a href="#twitch">Twitch</a>
-    <a href="#about">About Me</a>
-    <a href="#miv">My Cat</a>
+    <a href="#about">About</a>
+    <a href="#miv">Miv</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -65,41 +132,39 @@
     <section id="twitch">
       <h2>🎮 Twitch Channel</h2>
       <p>
-        I stream under the name <strong><a href="https://twitch.tv/Friiskers" target="_blank">Friiskers</a></strong>. My streams focus on games like <strong>FiveM</strong> and immersive storytelling experiences, often grounded in realistic settings without fantasy fluff. I love chatting with my viewers, because engagement is what makes streaming fun.
+        You’ll find me live as <strong><a href="https://twitch.tv/Friiskers" target="_blank">Friiskers</a></strong> I stream gritty games like <strong>DayZ</strong>, talk to chat constantly, and focus on raw storytelling and immersion. No elves, no fluff — just vibes, survival, and realism.
       </p>
     </section>
 
     <section id="about">
-      <h2>👤 About Me</h2>
+      <h2>🧠 About Me</h2>
       <p>
-        I'm Friiskers, a Danish streamer who enjoys crafting realistic worlds and deep characters. I’m 196 cm tall, and I live in Denmark (despite hating the cold, cloudy, dusty weather here). I also love working with tech, geeking out on PCs and just... Living?
+        I'm a 196 cm tall Danish powerhouse who lives for authentic stories, deep character creation, and community interaction. I’m currently interning in tech, but my heart beats for immersive gaming and storytelling. Some quick facts:
       </p>
-      <p>
-        My hobbies include:
-        <ul>
-          <li>Streaming and gaming (especially immersive games like <strong>FiveM, Baldur's Gate 3, DayZ,/strong>)</li>
-          <li>Worldbuilding – I've helped create numerous groups for a site called <em>DayZRP.com</em> and quite frankly just love writing </li>
-          <li>Roleplaying – Ask me about "Ting Ting" or </li>
-          <li>Hanging out with my cat, Miv 🐾</li>
-        </ul>
-      </p>
+      <ul>
+        <li>Creator of the fictional groups on <strong>DayZRP</strong></li>
+        <li>Roleplay enthusiast (ask about <em>El Pastor</em> or <em>Ting Ting</em>)</li>
+        <li>Realist at heart — no magic, just tension</li>
+        <li>Diagnosed with BPD — honest, intense, and always trying to grow</li>
+      </ul>
     </section>
 
     <section id="miv">
-      <h2>🐱 Miv – The Real Star</h2>
+      <h2>🐾 Miv – The Vibe Queen</h2>
       <p>
-        Miv is my cat, and honestly, the most chill living thing I could ask for. However, I'm pretty sure that she's not all too happy with the amount of love that she's getting... (She has a tendency to bite my hand after a good cuddle session)
+        MMiv is my cat and emotional support unit. She’s affectionate as hell. She climbs into bed for morning cuddles like clockwork and has even fixed my sleep schedule better than any pill ever could. She’s the co-host of the stream whether she likes it or not.
       </p>
     </section>
 
     <section id="contact">
       <h2>📫 Contact</h2>
-      <p>You can reach me on Twitch or drop me an email: <a href="mailto:andreas919j@gmail.com">andreas919j@gmail.com</a></p>
+      <p>Want to reach out? Business inquiries, collabs, or fan mail — hit me at <a href="mailto:andreas919j@gmail.com">andreas919j@gmail.com</a>.</p>
+      <p>Or just swing by the stream and say hi in chat 🤘</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Friiskers. Powered by cat cuddles and pixels.</p>
+    <p>&copy; 2025 Friiskers. Built with love, and a cat on my keyboard.</p>
   </footer>
 
 </body>
