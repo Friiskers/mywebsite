@@ -10,6 +10,44 @@
   <title>Friiskers | Streamer & Cat Dad</title>
   <style>
     *
+    .miv-photo-dropdown {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.dropdown-toggle {
+  background-color: #1f1f1f;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+  background-color: #333;
+}
+
+.dropdown-content {
+  margin-top: 1rem;
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+.dropdown-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
     .spotify-section {
   background: #121212;  /* dark background */
   padding: 2rem 1rem;
@@ -233,7 +271,14 @@
       <p>
         Miv is my cat and emotional support unit. She’s affectionate as hell. She climbs into bed for morning cuddles like clockwork and has even fixed my sleep schedule better than any pill ever could. She’s the co-host of the stream whether she likes it or not.
       </p>
+      <div class="miv-photo-dropdown">
+  <button class="dropdown-toggle" onclick="toggleDropdown()">Show Miv’s Picture 🐾</button>
+  <div id="mivDropdown" class="dropdown-content">
+    <img src="miv.jpg" alt="Miv the Cat" />
+  </div>
+</div>
     </section>
+  
 
   <section id="spotify-playlist" class="spotify-section">
   <h2>🎧 My Spotify Playlist</h2>
@@ -261,6 +306,13 @@
   <footer>
     <p>&copy; 2025 Friiskers. Built with love, and a cat on my keyboard.</p>
   </footer>
+
+  <script>
+  function toggleDropdown() {
+    const dropdown = document.getElementById("mivDropdown");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+  }
+</script>
 
 </body>
 </html>
