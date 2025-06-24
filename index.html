@@ -5,7 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Friiskers | Streamer & Cat Dad</title>
   <style>
-    * {
+    *
+    .spotify-section {
+  background: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
+  padding: 2rem 1rem;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 3rem auto;
+  box-shadow: 0 8px 24px rgba(29, 185, 84, 0.4);
+  color: white;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.spotify-section h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+  text-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.spotify-section p {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+
+.spotify-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.spotify-iframe {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  height: 380px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.spotify-iframe:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .spotify-section {
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+  }
+
+  .spotify-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .spotify-section p {
+    font-size: 1rem;
+  }
+
+  .spotify-iframe {
+    height: 320px;
+  }
+}
+
+    {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -164,6 +230,22 @@
         Miv is my cat and emotional support unit. She’s affectionate as hell. She climbs into bed for morning cuddles like clockwork and has even fixed my sleep schedule better than any pill ever could. She’s the co-host of the stream whether she likes it or not.
       </p>
     </section>
+
+  <section id="spotify-playlist" class="spotify-section">
+  <h2>🎧 My Spotify Playlist</h2>
+  <p>Enjoy some of my favorite tunes while you hang out!</p>
+  <div class="spotify-wrapper">
+    <iframe 
+      src="https://open.spotify.com/embed/playlist/1ZgWRFwq9NOGW8cKmxNdUs?si=00c75599830a47ba" 
+      frameborder="0" 
+      allowtransparency="true" 
+      allow="encrypted-media" 
+      class="spotify-iframe"
+      loading="lazy"
+      ></iframe>
+  </div>
+</section>
+
 
     <section id="contact">
       <h2>📫 Contact</h2>
