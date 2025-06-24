@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Friiskers - Streamer & Cat Dad</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+    header {
+      background-color: #9146FF;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #1f1f1f;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #9146FF;
+      font-weight: bold;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1f1f1f;
+      color: #aaa;
+    }
+    a {
+      color: #00BFFF;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Friiskers</h1>
+    <p>Streamer | Cat Dad | Gamer | Realist</p>
+  </header>
+
+  <nav>
+    <a href="#twitch">Twitch</a>
+    <a href="#about">About Me</a>
+    <a href="#mev">My Cat</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="twitch">
+      <h2>🎮 Twitch Channel</h2>
+      <p>
+        I stream under the name <strong><a href="https://twitch.tv/CutieNiller" target="_blank">CutieNiller</a></strong> (soon maybe <em>NillersPOV</em>). My streams focus on games like <strong>Stalcraft</strong> and immersive storytelling experiences, often grounded in realistic settings without fantasy fluff. I love chatting with my viewers—engagement is what makes streaming fun.
+      </p>
+    </section>
+
+    <section id="about">
+      <h2>👤 About Me</h2>
+      <p>
+        I'm Friiskers, a Danish streamer who enjoys crafting realistic worlds and deep characters. I’m 196 cm tall, weigh about 120 kilos, and I live in Denmark (despite hating the cold, cloudy, dusty weather here). I also work in tech, currently interning at a company that sells electronics and PC parts.
+      </p>
+      <p>
+        My hobbies include:
+        <ul>
+          <li>Streaming and gaming (especially immersive games like <strong>Stalcraft</strong>)</li>
+          <li>Worldbuilding – I created a fictional Eastern European country called <em>Livonia</em></li>
+          <li>Roleplaying – Ask me about Domingo "El Pastor" Rivera or Tom "Ting Ting" Thorskensen</li>
+          <li>Spending time with my girlfriend, Ash ❤️</li>
+          <li>Hanging out with my cat, Mev 🐾</li>
+        </ul>
+      </p>
+    </section>
+
+    <section id="mev">
+      <h2>🐱 Mev – The Real Star</h2>
+      <p>
+        Mev is my cat, and honestly, the most chill companion I could ask for. She shows affection by slow blinking, head-butting, purring, kneading, and sleeping near me. Every morning, she comes in for cuddles and just vibes with me. She’s made my life better—and my sleep, somehow, too.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>📫 Contact</h2>
+      <p>You can reach me on Twitch or drop me an email: <a href="mailto:friiskers@example.com">friiskers@example.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Friiskers. Powered by cat cuddles and pixels.</p>
+  </footer>
+
+</body>
+</html>
